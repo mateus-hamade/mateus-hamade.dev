@@ -11,8 +11,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Mateus Hamade | Portifólio",
-  description: "",
+  title: "Mateus Hamade | Portfólio",
+  description: "Portfólio de Mateus Hamade, desenvolvedor Full-Stack e mestrando em Ciência da Computação.",
   icons: {
     icon: "./binary.png",
   },
@@ -25,7 +25,7 @@ const RootLayout = ({
 }) => {
   return (
     <html lang="pt-BR"
-      data-theme="light"
+      data-theme="dark"
       className={`${inter.variable}`}
     >
       <body className="font-nunito">

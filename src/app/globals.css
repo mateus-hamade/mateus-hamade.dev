@@ -44,6 +44,99 @@
   --noise: 0;
 }
 
+@layer components {
+  .portfolio-section {
+    @apply border-b border-gray-800 py-10;
+  }
+
+  .social-link {
+    @apply flex items-center gap-2 text-gray-300 transition-colors hover:text-green-400;
+  }
+
+  .experience-list {
+    @apply grid gap-4;
+  }
+
+  .experience-card {
+    @apply rounded-lg border border-gray-800 bg-gray-900/40 p-5 leading-7;
+  }
+
+  .item-heading {
+    @apply mb-3 flex flex-col justify-between gap-1 sm:flex-row sm:gap-4;
+  }
+
+  .item-heading h3,
+  .info-card h3,
+  .publication-card h3,
+  .project-card h3 {
+    @apply font-semibold text-white;
+  }
+
+  .item-heading > span,
+  .info-card span,
+  .publication-card span,
+  .project-card span {
+    @apply text-sm text-green-400;
+  }
+
+  .item-place {
+    @apply text-sm text-gray-500;
+  }
+
+  .period {
+    @apply shrink-0 whitespace-nowrap;
+  }
+
+  .role-progression {
+    @apply mb-3 text-sm text-gray-300;
+  }
+
+  .experience-details {
+    @apply list-disc space-y-1 pl-5 text-sm leading-6 marker:text-green-400;
+  }
+
+  .info-card {
+    @apply flex gap-4 rounded-lg border border-gray-800 bg-gray-900/40 p-5;
+  }
+
+  .info-card p {
+    @apply mt-1 text-sm;
+  }
+
+  .publication-card {
+    @apply flex gap-4 rounded-lg border border-gray-800 bg-gray-900/40 p-5 transition-colors hover:border-green-400/60;
+  }
+
+  .publication-card p {
+    @apply my-2 text-sm;
+  }
+
+  .project-card {
+    @apply flex min-h-52 flex-col rounded-lg border border-gray-800 bg-gray-900/40 p-5 transition-all hover:-translate-y-1 hover:border-green-400/60;
+  }
+
+  .project-card h3 {
+    @apply mt-5;
+  }
+
+  .project-card p {
+    @apply my-3 grow text-sm leading-6;
+  }
+
+  .project-pill,
+  .tech-pill {
+    @apply inline-flex items-center gap-1 rounded-md border border-gray-700 px-3 py-1.5 text-sm;
+  }
+
+  .project-pill {
+    @apply transition-colors hover:border-green-400 hover:text-green-400;
+  }
+
+  .tech-pill {
+    @apply bg-gray-900/60 text-gray-300;
+  }
+}
+
 @plugin "daisyui/theme" {
   name: "light";
   default: false;
